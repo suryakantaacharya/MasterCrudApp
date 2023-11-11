@@ -8,7 +8,7 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.infy</groupId>
+	<groupId>com.surya.codes</groupId>
 	<artifactId>Demo_SpringCRUD_App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MasterCrudApp</name>

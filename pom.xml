@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.surya.codes</groupId>
 	<artifactId>Demo_SpringCRUD_App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MasterCrudApp</name>
 	<description>Demo for Spring REST</description>
+	<url>https://github.com/SuryakantaAcharya/MasterCrudApp</url>
 
 	<properties>
 		<java.version>17</java.version>
@@ -20,7 +22,7 @@
 	</properties>
 
 	<dependencies>
-	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
@@ -66,6 +68,29 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Suryakanta Acharya</name>
+			<email>suryakanta.acharya.088@gmail.com</email>
+			<organization>com.surya.codes</organization>
+			<organizationUrl>https://github.com/SuryakantaAcharya</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/SuryakantaAcharya/MasterCrudApp.git</connection>
+		<developerConnection>
+			scm:git:ssh://github.com/SuryakantaAcharya/MasterCrudApp.git</developerConnection>
+		<url>http://github.com/SuryakantaAcharya/MasterCrudApp</url>
+	</scm>
 
 	<build>
 		<plugins>

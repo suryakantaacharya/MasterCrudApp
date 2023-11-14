@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.suryakantaacharya</groupId>
 	<artifactId>MasterCrudApp</artifactId>
-	<version>1.0.0</version>
+	<version>2.0.1</version>
 	<name>MasterCrudApplication</name>
 	<description>Testing upload to central repository</description>
 	<url>https://github.com/suryakantaacharya/MasterCrudApp</url>
@@ -13,7 +13,6 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-
 	</properties>
 
 	<licenses>
@@ -34,6 +33,15 @@
 				https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+	</dependencies>
 
 	<developers>
 		<developer>
@@ -91,17 +99,6 @@
 				<version>3.0.1</version>
 				<configuration>
 					<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 			<plugin>
